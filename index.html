@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Rock, Paper, Scissors</h1>
+    <h3 id="weapon-choice">Choose your weapon</h3>
+
+    <section id="scoreboard">
+      <p>Player Score: <span id="player-score">0</span></p>
+      <p>Opponent Score: <span id="opponent-score">0</span></p>
+    </section>
+
+    <div id="outcome-message"></div>
+
+    <section class="weapon-container">
+      <div class="weapons">
+        <button type="button" onclick="userInput('rock')">
+          <img class="weapon" src="images/rock.png" />
+        </button>
+
+        <button type="button" onclick="userInput('paper')">
+          <img src="images/paper.png" />
+        </button>
+
+        <button type="button" onclick="userInput('scissors')">
+          <img src="images/scissors.png" />
+        </button>
+      </div>
+
+      <div class="button-container">
+        <input onclick="onSubmit()" type="submit" />
+        <button type="button" onclick="resetGame()">Reset</button>
+      </div>
+    </section>
+
+    <div id="opponent-choice"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
